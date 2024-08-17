@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complex grid</title>
+    <style>
+      .container {
+        width: 1200px;
+        margin: 0px auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 10px;
+      }
+      .left {
+        background-color: red;
+      }
+
+      /* Using grid method */
+
+      .right {
+        background-color: blue;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-right: 2.5rem;
+      }
+
+      /* Using flex Method
+      .right {
+        background-color: blue;
+        display: flex;
+      }
+      .ro1 {
+        background-color: black;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+      .ro2 {
+        flex-direction: column;
+        flex-grow: 1;
+      }
+      .ro3 {
+        flex-direction: column;
+        flex-grow: 1;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>Left</h1>
+        <h4>
+          text text text text text text text text text text text etxt tetxt etdx
+          t
+        </h4>
+      </div>
+      <div class="right">
+        <h2>Clo 1</h2>
+        <h2>Clo 2</h2>
+        <h2>Clo 3</h2>
+        <h2>Clo 1</h2>
+        <h2>Clo 2</h2>
+        <h2>Clo 3</h2>
+        <h2>Clo 1</h2>
+        <h2>Clo 2</h2>
+        <h2>Clo 3</h2>
+      </div>
+
+      <!-- Using flex method
+      <div class="right">
+        <div class="ro1">
+          <h2>Clo 1</h2>
+          <h2>Clo 2</h2>
+          <h2>Clo 3</h2>
+        </div>
+        <div class="ro2">
+          <h2>Clo 1</h2>
+          <h2>Clo 2</h2>
+          <h2>Clo 3</h2>
+        </div>
+        <div class="ro3">
+          <h2>Clo 1</h2>
+          <h2>Clo 2</h2>
+          <h2>Clo 3</h2>
+        </div>
+      </div> -->
+    </div>
+  </body>
+</html>
